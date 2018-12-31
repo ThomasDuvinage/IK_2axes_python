@@ -111,7 +111,7 @@ def all_positions(limits,liaisons,dictvariables, px, py,n, fx, fy,angle_table):
     #we create a csv table / if it all ready exist in your folder it will write on it 
     #That alowed us to not recalculate all the possitons eah time 
 
-    for k in range(liaisons,0):
+"""     for k in range(liaisons,0):
         for i in range(0,n):
             angle_table[liaisons] = limits[liaisons][i]
         
@@ -125,7 +125,7 @@ def all_positions(limits,liaisons,dictvariables, px, py,n, fx, fy,angle_table):
                         
                     #on enregistre l'equivalent de matrix_angle_pos dans le tableau csv
                     matrice_writer.writerow([round(fx(120.0, 130.0, theta1s[i], theta2s[n]),1),round(fy(120.0, 130.0, theta1s[i], theta2s[n]),1), theta1s[i],theta2s[n]])
-
+ """
 #la fonction qui suit va chercher dans le tableau de valeur si les demandes en X et Y correspondent à une 
 def ask_position(GX, GY, nbs_val_matrix, matrix_angle_pos,  fx, fy, seuil):
     matrix_reponse_t1 = []
